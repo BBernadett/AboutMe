@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    background-color: rgb(242, 230, 217);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.contanier {
+
+    margin: 0px auto;
+    max-width: calc(100vw - 65%);
+    height: 80%;
+    padding: 55px;
+    background-color: rgba(215, 180, 142, .7);
+    border-radius: 10px;
+    box-shadow: 5px 1px 3px rgb(148, 102, 56);
+    width: 90%;
+}
+
+.head {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 2px solid  rgb(151, 104, 53);
+    padding: 0 auto;
+    margin-left: 0 auto;
+    box-sizing: content-box;
+    margin-bottom: 30px;
+    margin-top: -125px;
+    box-shadow:  5px 1px 3px rgb(148, 102, 56);;
+}
+
+@keyframes rotate {
+        100% {
+            -moz-transform: rotate(360deg);
+        }
+    }
+
+img:hover {
+    animation: rotate 2s;
+}
+h1, h2, span, p{
+    color: rgb(148, 102, 56);
+    text-shadow: 5px 1px 3px rgb(195, 142, 115);
+}
+
+.mapicon {
+    
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+.main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.social-links h2 {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;  
+    margin: 15px;
+}
+
+ul li{
+    display: inline;
+    white-space: 10px;
+}
+
