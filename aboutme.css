@@ -38,8 +38,6 @@ img {
     height: 140px;
     border-radius: 50%;
     border: 2px solid  rgb(174, 150, 123);
-    padding: 0 auto;
-    margin-left: 0 auto;
     box-sizing: content-box;
     margin-bottom: 30px;
     margin-top: -125px;
@@ -101,7 +99,6 @@ ul {
 
 ul li{
     display: inline;
-    white-space: 10px;
 }
 @keyframes fadeIn {
     from { opacity: 0;}
