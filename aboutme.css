@@ -82,6 +82,13 @@ text-shadow: 5px 1px 3px rgba(53, 28, 10, 0.24);
     width: 35px;
     height: 35px;  
     margin: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.icon:hover {
+        transform: scale(1.2);
+
 }
 
 .social-links h2 {
