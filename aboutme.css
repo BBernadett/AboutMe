@@ -7,7 +7,8 @@ body {
     display: flex;
     margin: 0 auto;
     padding: 0;
-    background-color: rgb(242, 230, 217);
+    /*background-color: rgba(115, 115, 115, .7);*/
+    background-image: linear-gradient(#f0ece7, #b7966d);
     background-size: cover;
     height: 100vh;
     width: 100%;
@@ -16,14 +17,14 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 .contanier {
-
     margin: 0px auto;
     max-width: calc(100vw - 65%);
     height: 80%;
     padding: 55px;
-    background-color: rgba(215, 180, 142, .7);
+    /*background-color:  rgb(112, 250, 215);*/
+    background-image: linear-gradient(#ecd5c5, #795d3a);
     border-radius: 10px;
-    box-shadow: 5px 1px 3px rgb(148, 102, 56);
+    box-shadow: 5px 3px 3px #795d3a;
     width: 90%;
 }
 
@@ -36,13 +37,13 @@ img {
     width: 140px;
     height: 140px;
     border-radius: 50%;
-    border: 2px solid  rgb(151, 104, 53);
+    border: 2px solid  rgb(174, 150, 123);
     padding: 0 auto;
     margin-left: 0 auto;
     box-sizing: content-box;
     margin-bottom: 30px;
     margin-top: -125px;
-    box-shadow:  5px 1px 3px rgb(148, 102, 56);;
+    box-shadow:  5px 1px 3px #795d3a;
 }
 
 @keyframes rotate {
@@ -55,8 +56,10 @@ img:hover {
     animation: rotate 2s;
 }
 h1, h2, span, p{
-    color: rgb(148, 102, 56);
-    text-shadow: 5px 1px 3px rgb(195, 142, 115);
+    /*color: rgb(148, 102, 56);
+    text-shadow: 5px 1px 3px rgb(195, 142, 115);*/
+    color: rgb(91, 72, 54);
+text-shadow: 5px 1px 3px rgba(53, 28, 10, 0.24);
 }
 
 .mapicon {
@@ -70,7 +73,7 @@ h1, h2, span, p{
     margin: 0 auto;
 }
 
-.social-links h2 {
+.social-links{
     margin: 0 auto;
     text-align: center;
 }
@@ -81,8 +84,87 @@ h1, h2, span, p{
     margin: 15px;
 }
 
+.social-links h2 {
+    margin-top: 25px;
+}
+
+ul {
+    padding: 0;
+}
+
 ul li{
     display: inline;
     white-space: 10px;
 }
+@keyframes fadeIn {
+    from { opacity: 0;}
+    to {
+        opacity: 1;
+    }
+}
+h1 {
+    opacity: 0;
+    animation: fadeIn 3s forwards ;
+}
+.headline h2 {
+    opacity: 0;
+    animation: fadeIn 4s forwards 1s;
+}
 
+
+@keyframes slideLeft {
+    from {
+        left: -50%;
+        opacity: 0;
+    }
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+span, .mapicon {
+    opacity: 0;
+    position: relative;
+    left: -50%;
+    animation: slideLeft 2s forwards 1.5s;
+}
+
+@media only screen and (min-width: 915px) and (max-width: 1070px) {
+    body {
+        display: block;
+    }
+    .contanier {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 2fr);
+        grid-gap: 10px;
+        max-height: calc(100vh - 10%);
+        margin: 90px auto;
+        height: 90%;
+        max-width: calc(100vw - 35%);
+    }
+    .head {
+        height: 320px;
+    }
+    .img {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 915px) {
+    body {
+        margin: 0px;
+        height: 100%;
+        }
+    .contanier {
+        margin: 90px auto 50px auto;
+        height: 90%;
+        max-width: 100%;
+    }
+    }
+    .icon {
+        margin: 13px;
+    }
+    .headline > h1:nth-child(1) {
+        margin-top: 0px;
+        }
