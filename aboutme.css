@@ -180,12 +180,12 @@ span, .mapicon {
         }
     .contanier {
         margin: 90px auto 50px auto;
-        height: 90%;
+        height: 1024px;
         max-width: 80%;
     }
     }
     .icon {
-        margin: 13px;
+        margin: 8px;
     }
     .headline > h1:nth-child(1) {
         margin-top: 0px;
