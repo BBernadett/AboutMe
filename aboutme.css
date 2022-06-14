@@ -8,41 +8,32 @@ html {
 }
 body {
     display: flex;
-    margin: 0 auto;
     padding: 0;
+    height: 100vh;
     /*background-color: rgba(115, 115, 115, .7);*/
     background-image: linear-gradient(#f0ece7, #b7966d);
     background-size: cover;
-    /*height: 100vh;*/
-    width: 100%;
     justify-content: center;
     align-items: center;
     font-family: 'Roboto Condensed', sans-serif;
+    
 }
 .contanier {
-    margin: 0px auto;
-    max-width: calc(100vw - 65%);
-    height: 80%;
-    padding: 55px;
-    /*background-color:  rgb(112, 250, 215);*/
+    width: 360px;
+    max-width: calc(100vw - 20px);
     background-image: linear-gradient(#ecd5c5, #795d3a);
     border-radius: 10px;
     box-shadow: 5px 3px 3px #795d3a;
+    
+}
+
+.head, .main {
     width: 90%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, 2fr);
-    grid-gap: 10px;
-    max-height: calc(100% - 10%);
-    margin: 90px auto;
-    height: 90%;
-    max-width: calc(100vw - 35%);
+    margin: auto;
 }
 
 .head {
     text-align: center;
-    width: 90%;
-    margin: 0 auto;
 }
 img {
     width: 140px;
@@ -51,7 +42,7 @@ img {
     border: 2px solid  rgb(174, 150, 123);
     box-sizing: content-box;
     margin-bottom: 30px;
-    margin-top: -125px;
+    margin-top: -70px;
     box-shadow:  5px 1px 3px #795d3a;
 }
 
@@ -65,14 +56,11 @@ img:hover {
     animation: rotate 2s;
 }
 h1, h2, span, p{
-    /*color: rgb(148, 102, 56);
-    text-shadow: 5px 1px 3px rgb(195, 142, 115);*/
     color: rgb(91, 72, 54);
 text-shadow: 5px 1px 3px rgba(53, 28, 10, 0.24);
 }
 
 .mapicon {
-    
     width: 25px;
     height: 25px;
     display: inline-block;
@@ -80,6 +68,7 @@ text-shadow: 5px 1px 3px rgba(53, 28, 10, 0.24);
 .main {
     width: 90%;
     margin: 0 auto;
+    height: fit-content;
 }
 
 .social-links{
@@ -144,10 +133,10 @@ span, .mapicon {
     animation: slideLeft 2s forwards 1.5s;
 }
 
-@media only screen and (max-width:1024x) {
+ /*@media only screen and (max-width:1024x) {
     .container{
         margin: 70px auto;
-        max-width: calc(100vw - 35%);
+        max-width: calc(100vw - 45%);
         height: 90%;
     }
 }
@@ -190,3 +179,37 @@ span, .mapicon {
     .headline > h1:nth-child(1) {
         margin-top: 0px;
         }
+@media only screen and (max-width: 360px) {
+            .container{
+            margin: 90px auto 50px auto;
+            height: 1024px;
+            max-width: 80%; 
+            } 
+        }*/
+@media only screen and (max-width: 480px) {
+    body{
+        margin: 70px 0 0 0;
+       
+    }
+        
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+   
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+   
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    
+}
+
+
+@media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    body{
+        margin: 80px 0 20px 0;
+        height: calc(100vh - 10%);
+    }
+}
