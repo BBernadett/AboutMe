@@ -13,7 +13,7 @@ body {
     /*background-color: rgba(115, 115, 115, .7);*/
     background-image: linear-gradient(#f0ece7, #b7966d);
     background-size: cover;
-    height: 100vh;
+    /*height: 100vh;*/
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -29,6 +29,14 @@ body {
     border-radius: 10px;
     box-shadow: 5px 3px 3px #795d3a;
     width: 90%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 2fr);
+    grid-gap: 10px;
+    max-height: calc(100% - 10%);
+    margin: 90px auto;
+    height: 90%;
+    max-width: calc(100vw - 35%);
 }
 
 .head {
@@ -136,7 +144,14 @@ span, .mapicon {
     animation: slideLeft 2s forwards 1.5s;
 }
 
-@media only screen and (min-width: 915px) and (max-width: 1070px) {
+@media only screen and (max-width:1024x) {
+    .container{
+        margin: 70px auto;
+        max-width: calc(100vw - 35%);
+        height: 90%;
+    }
+}
+@media only screen and (min-width: 915px) and (max-width: 1010px) {
     body {
         display: block;
     }
@@ -151,7 +166,7 @@ span, .mapicon {
         max-width: calc(100vw - 35%);
     }
     .head {
-        height: 320px;
+        height: 290px;
     }
     .img {
         margin-bottom: 0;
@@ -166,7 +181,7 @@ span, .mapicon {
     .contanier {
         margin: 90px auto 50px auto;
         height: 90%;
-        max-width: 100%;
+        max-width: 80%;
     }
     }
     .icon {
